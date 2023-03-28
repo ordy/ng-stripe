@@ -16,7 +16,7 @@ export class AppComponent {
 
   async triggerCreateCheckout(eventProduct: any) {
     this.response = await this.http
-      .post('/.netlify/functions/stripe.js', eventProduct, {
+      .post('../../netlify/functions/stripe.js', eventProduct, {
         headers: {
           'Content-Type': 'application/json',
         },
