@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { loadStripe } from '@stripe/stripe-js';
+import items from '../assets/items.json'
 
 @Component({
 	selector: 'app-root',
@@ -9,12 +10,13 @@ import { loadStripe } from '@stripe/stripe-js';
 })
 export class AppComponent {
 	title = 'ng-stripe';
-  testproduct = {'name':'s', "x": "z"};
+  testproduct = items[1];
   private response: any;
 
   constructor(private http: HttpClient){}
 
   async triggerCreateCheckout(eventProduct: any) {
+    console.log(`object -> ${this.testproduct}`);
     this.response = await this.http
       .post('/.netlify/functions/stripe', eventProduct, {
         headers: {

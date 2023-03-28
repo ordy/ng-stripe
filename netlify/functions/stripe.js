@@ -1,14 +1,14 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET);
 
 exports.handler = async event => {
-	//const product = JSON.parse(event.body);
+	const product = JSON.parse(event.body);
 	const lineItems = [
 		{
-			name: 'Donation',
+			name: product.name,
 			currency: 'USD',
-			description: 'coffee money',
-			images: 'https://via.placeholder.com/200x200',
-			amount: `10`,
+			description: product.description,
+			images: [product.image],
+			amount: `${product.price}00`,
 			quantity: 1
 		}
 	];
