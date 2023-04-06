@@ -1,26 +1,18 @@
 [
 	{
-		"name": "name1",
+		"name": "Small Donation",
 		"id": 1,
-		"price": "5",
-		"url": "https://en.wikipedia.org/wiki/Seattle_Seahawks",
+		"price": "1",
+		"url": "https://supporters.eff.org/donate/donate-eff-0",
 		"image": "https://via.placeholder.com/400x400.jpg",
-		"description": "NAME1 DESCRIPTION"
+		"description": "1$ donation"
 	},
 	{
-		"name": "name2",
+		"name": "Big Donation",
 		"id": 2,
-		"price": "6",
-		"url": "https://en.wikipedia.org/wiki/Seattle_Seahawks",
+		"price": "10",
+		"url": "https://supporters.eff.org/donate/donate-eff-0",
 		"image": "https://via.placeholder.com/300x300.jpg",
-		"description": "NAME1 DESCRIPTION"
-	},
-	{
-		"name": "name3",
-		"id": 3,
-		"price": "7",
-		"url": "https://en.wikipedia.org/wiki/Seattle_Seahawks",
-		"image": "https://via.placeholder.com/350x350.jpg",
-		"description": "NAME1 DESCRIPTION"
+		"description": "10$ donation"
 	}
 ]
