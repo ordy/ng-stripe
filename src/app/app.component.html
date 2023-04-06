@@ -4,31 +4,27 @@
 	</mat-toolbar>
 	<main class="app__main">
 		<section>
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>$1</mat-card-title>
-        </mat-card-header>
-          <img mat-card-image src="../assets/img/Coins-rafiki.png" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          Make a $1 donation.
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="triggerCreateCheckout(testproduct)">Donate</button>
-        </mat-card-actions>
-      </mat-card>
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>$10</mat-card-title>
-        </mat-card-header>
-          <img mat-card-image src="../assets/img/Banknote-rafiki.png" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          Make a $10 donation.
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="primary">Donate</button>
-        </mat-card-actions>
-      </mat-card>
-    </section>
+			<mat-card>
+				<mat-card-header>
+					<mat-card-title>$1</mat-card-title>
+				</mat-card-header>
+				<img mat-card-image src="../assets/img/Coins-rafiki.png" alt="Photo of a stack of coins" />
+				<mat-card-content>Make a $1 donation.</mat-card-content>
+				<mat-card-actions>
+					<button mat-raised-button color="primary" (click)="triggerCreateCheckout(testproduct)">Donate</button>
+				</mat-card-actions>
+			</mat-card>
+			<mat-card>
+				<mat-card-header>
+					<mat-card-title>$10</mat-card-title>
+				</mat-card-header>
+				<img mat-card-image src="../assets/img/Banknote-rafiki.png" alt="Photo of a stack of dollar bills" />
+				<mat-card-content>Make a $10 donation.</mat-card-content>
+				<mat-card-actions>
+					<button mat-raised-button color="primary">Donate</button>
+				</mat-card-actions>
+			</mat-card>
+		</section>
 	</main>
-    <footer><a href="https://storyset.com/money">Images by Storyset</a></footer>
+	<footer><a href="https://storyset.com/money">Images by Storyset</a></footer>
 </div>
